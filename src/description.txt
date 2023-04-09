@@ -1,0 +1,47 @@
+Specifications
+    Product Name: The Safe House
+    Power Input: 5V
+    Number of Sensors: 5
+    Number of Systems: 7
+    Micro Controller: Arduino Nano
+
+Systems
+    Sizemic Activity
+    Flood Detection
+    Window State
+    Door State
+    Height Measurement
+    User Display
+    (RTOS)
+
+Sizemic Activity
+    Sensor: Accelerometer
+    Function: Triggers alarm and red light when house angles more than 1 degree
+    Location: Living-Dining room
+
+Flood Detection
+    Sensor: Seesaw switch
+    Function: Triggers alarm and blue light when the flood switch is raised
+    Location: Bathroom
+
+Window State
+    Sensor: Hall-effect
+    Function: When a window opens a white light for the corosponding window turns on
+    Location: Bedroom, Kitchen, Dining room
+
+Door State
+    Sensor: Photoresistor
+    Function: The states [Blocked, Partially Blocked, Not Blocked] with corosponding lights [Red, Yellow, Green]
+    Location: Front door
+
+Height Measuerment
+    Sensor: PSD
+    Function: Measures the height of people walking through the front door. If person solid yellow light, if small or animal flashing yellow light.
+    Location: Front door
+
+User Display
+    Houses LED's which are used by the other systems. All leds are ran in parallel
+
+RTOS
+    Custom built CoOperative RTOS comprised of mainly arduino utilites and a runtime dynamic schedular
+
